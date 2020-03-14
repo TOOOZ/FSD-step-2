@@ -7,7 +7,7 @@ build: path.join(__dirname, 'build')
 };
 
 module.exports = {
-    entry: PATHS.source + '/index.js',
+    entry: PATHS.source + '/index.pug',
         output: {
         path: PATHS.build,
         filename: '[name].js'
