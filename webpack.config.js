@@ -1,41 +1,49 @@
-const path = require('path');
-const HtmlWebpackPlagin = require('html-webpack-plugin');
+const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const PATHS = {
-    source: path.join(__dirname, 'source'),
-    build: path.join(__dirname, 'build')
-};
 
 module.exports = {
     entry: {
-        'index': PATHS.source +'/pages/index/index.js',
-        'blog' : PATHS.source +'/pages/blog/blog.js'
+        app: './src/index.js'        
     },
     output: {
-        path: PATHS.build,
-        filename: '[name].js'
+        filename: '[name].js',
+        path: path.resolve(__dirname, './dist'),
+        publicPath: '/dist'
+    },
+    module: {
+        rules: [{
+            test: /\.js$/
+        }, 
+        {
+            test: /\.css$/,
+            use: [
+                MiniCssExtractPlugin.loader,
+                "css-loader"
+            ]
+        },
+        {
+            test: /\.scss$/,
+            use: [
+                'style-loader',
+                MiniCssExtractPlugin.loader,
+                {
+                    loader: 'css-loader',
+                    options: { sourceMap: true}
+                },{
+                    loader: 'sass-loader',
+                    options: { sourceMap: true}
+                }
+            ]
+        }]
+    },
+    devServer: {
+        overlay: true
     },
     plugins: [
-        new HtmlWebpackPlagin({
-            filename: 'index.html',
-            chunks: ['index'],
-            template: PATHS.source + '/pages/index/index.pug'
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
         }),
-        new HtmlWebpackPlagin({
-            filename: 'blog.html',
-            chunks: ['blog'],
-            template: PATHS.source + '/pages/blog/blog.pug'
-        })
     ],
-    module: {
-        rules: [
-            {
-                test: /\.pug$/,
-                loader: 'pug-loader',
-                options: {
-                    pretty: true
-                }
-            }
-        ]
-    }
 }
+ 
