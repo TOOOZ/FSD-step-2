@@ -1,3 +1,39 @@
-h1 {
-    color: red;
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  background-color: #FFFFFF;
+
+  .container {
+    position: absolute;
+    width: 269.26px;
+    height: 610px;
+    left: 149.74px;
+    top: 145px;
+    //border: 2px solid red;
+
+    .color-box {
+        width: 280px;
+        height: 70px;
+
+        .color{
+            height: 70px;
+            width: 70px;
+            background: #1F2041;
+            border-radius: 6px;
+            float: left;
+        }
+
+        .label{
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 29px;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+            
+        }
+        }
+  }
 }

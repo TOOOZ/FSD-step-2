@@ -1,3 +1,2 @@
-import './common/common.js'
-import './css/main.css'
+//import './pug/main.pug'
 import './scss/main.scss'
