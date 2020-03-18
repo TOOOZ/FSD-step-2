@@ -1,3 +1,5 @@
+include /pug/main.pug
+
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -5,6 +7,13 @@ html(lang="en")
     title Colors & Type
     link(rel='stylesheet', href='main.css')
   body
-    div(class='container')
-      include /pug/main.pug
+    div(class='container colors')
+      +box('#1F2041','Dark shade 100% ','grey')
+      +box('#1F2041','Dark shade 75% ','grey')
+      +box('#1F2041','Dark shade 50% ','grey')
+      +box('#1F2041','Dark shade 25% ','grey')
+      +box('#1F2041','Dark shade 25% ','grey')
+      +box('#BC9CFF','Dark shade 25% ','purple')
+      +box('#6FCF97','Dark shade 25% ','green')
+      
       

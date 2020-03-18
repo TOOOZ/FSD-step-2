@@ -1,4 +1,4 @@
-//mixin box()
-div(class='color-box')
-  div(class='color')
-  b(class='label') Dark Shade 100%
+mixin box(color_code,name, color)
+  div(class='color-box')
+    div(class='block '+color)
+    div(class='label')= name + color_code
