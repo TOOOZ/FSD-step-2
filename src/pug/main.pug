@@ -1,4 +1,8 @@
 mixin box(color_code,name, color)
   div(class='color-box')
     div(class='block '+color)
-    div(class='label')= name + color_code
+    div(class='label')
+      div(class="border")
+       span=name
+       br
+       span(class='code')=color_code

@@ -1,6 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const PATHS = {
     source: path.join(__dirname, 'src'),
@@ -12,7 +13,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: PATHS.build,
-        publicPath: '/build'
+        //publicPath: '/build'
     },
     module: {
         rules: [{
@@ -23,12 +24,28 @@ module.exports = {
                     }, 
         },
         {
+            test: /\.(png|jpg|gif|svg)$/,
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images',
+            },
+        },
+        {
             test: /\.css$/,
             use: [
                 MiniCssExtractPlugin.loader,
                 "css-loader"
             ]
         },
+        {
+            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts'
+            }
+        }, 
         {
             test: /\.scss$/,
             use: [
@@ -50,6 +67,10 @@ module.exports = {
         liveReload: true
     },
     plugins: [
+        new CopyWebpackPlugin([
+            { from: PATHS.source + '/common/img' , to: PATHS.build + '/img'},
+            { from: PATHS.source + '/common/fonts' , to: PATHS.build + '/fonts'},
+          ]),
         new HtmlWebpackPlugin({
             template: PATHS.source + '/index.pug',
             }),
