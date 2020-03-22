@@ -1,5 +1,13 @@
 @import '/fonts.scss';
 
+@mixin color_box($color,$limpidity: 1) {
+  height: 70px;
+  width: 70px;
+  border-radius: 6px;
+  float: left;
+  background-color: rgba($color,$limpidity);
+}
+
 body,html {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
@@ -28,22 +36,18 @@ body {
             float: left;
         }
 
-        .grey {
-          background: rgba(31, 33, 65,1);
-        }
-
-        .purple {
-          background: #BC9CFF;
-        }
-
-        .green {
-          background: #6FCF97;
-        }
-
+        .grey_100{@include color_box(#1F2041)}
+        .grey_75{@include color_box(#1F2041,0.75)}
+        .grey_50{@include color_box(#1F2041,0.50)}
+        .grey_25{@include color_box(#1F2041,0.25)}
+        .grey_05{@include color_box(#1F2041,0.05)}
+        .purple{@include color_box(#BC9CFF)}
+        .green{@include color_box(#6FCF97)}
+        
         .label{
           width: 170px;
           height: 70px;
-          font-family: 'Quicksand', sans-serif;
+          font-family: 'Quicksand-Bold', sans-serif;
           font-style: normal;
           font-weight: bold;
           font-size: 19px;
@@ -54,9 +58,9 @@ body {
           padding-top: 5px;
                             
           .code{ 
-            font-family: Quicksand;
+            font-family: 'Quicksand-light';
             font-style: normal;
-            font-size: 17px;
+            font-size: 19px;
             line-height: 29px;            
           }
         }
@@ -69,15 +73,87 @@ body {
     height: 321px;
     left: 846px;
     top: 145px;
+    //border: 1px solid red;
 
+    .h_lebels{
+      width: 37px;
+      height: 297px;
+      float: left;
+      color: rgba(31, 32, 65, 0.25);
+
+      .h1{
+        width: 29px;
+        height: 30px;
+        font-family: 'Montserrat-Regular';
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: right;
+        margin-left: 8px;
+        margin-top: 0;
+      }
+  
+      .h2{
+        font-family: 'Montserrat-Regular';
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: right;
+        margin-top: 76px;
+      }
+  
+      .h3{
+        font-family: 'Montserrat-Regular';
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        margin-top: 74px;
+      }  
+
+      .body_labels{
+        font-family: 'Montserrat-Regular';
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        margin-top: 50px;
+      }
+    }
     .h1_type{
-      font-family: Quicksand;
+      font-family: 'Quicksand-Bold';
       font-style: normal;
-      font-weight: bold;
       font-size: 24px;
       line-height: 30px;
       color: #1F2041;
       padding-left: 67px;
+    }
+    .h2_type{
+      font-family: 'Quicksand-Bold';
+      font-style: normal;
+      font-size: 19px;
+      line-height: 24px;
+      padding-left: 67px;
+      padding-top: 50px;
+    }
+    .h3_type{
+      font-family: 'Montserrat-Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      padding-left: 67px;
+      padding-top: 50px;
+      text-transform: uppercase;
+    }
+    .body{
+      font-family: 'Montserrat-Regular';
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      padding-left: 67px;
+      padding-top: 48px;
     }
   }
 }

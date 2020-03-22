@@ -26,6 +26,9 @@ module.exports = {
         {
             test: /\.(png|jpg|gif|svg)$/,
             loader: 'file-loader',
+            exclude: [
+                path.resolve(__dirname,'src/common/fonts')
+            ],
             options: {
               name: '[name].[ext]',
               outputPath: 'images',
