@@ -17,17 +17,11 @@ html(lang="en")
       +box('#BC9CFF','Purple ','purple')
       +box('#6FCF97','Green ','green')
     div(class='headers_types')
-      div(class='h_lebels')
-        p(class='h1') H1
-        
-        p(class='h2') H2
-        
-        p(class='h3') H3
-        
-        p(class='body_labels') Body
-      div(class='h1_type') This one is the sub-section or widget title
-      div(class='h2_type') Next one is the item title inside widgets
-      div(class='h3_type') This is a label or CTA text
-      div(class='body') This is the body text which is used for most <br> of the design, like paragraphs, lists, etc.
+      +label('h1','h1_types','H1','This one is the sub-section or widget title')
+      +label('h2','h2_types','H2','Next one is the item title inside widgets')
+      +label('h3','h3_types','H3','This is a label or CTA text')
+      +label('body_title','body_types','Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+
+      
       
       

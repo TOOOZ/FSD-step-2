@@ -1,4 +1,4 @@
-mixin box(color_code,name, color)
+mixin box(color_code,name,color)
   div(class='color-box')
     div(class='block '+color)
     div(class='label')
@@ -6,3 +6,8 @@ mixin box(color_code,name, color)
        span=name
        br
        span(class='code')=color_code
+
+mixin label(h_class,label_class,label_h,label_body)
+  div(class='title_container')
+      span(class=h_class)=label_h
+      div(class=label_class)=label_body
