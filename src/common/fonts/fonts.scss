@@ -1,0 +1,31 @@
+@mixin font-face ($name) {
+    font-family: $name;
+    src:  url($name+'.woff2') format('woff2'),
+          url($name+'.woff') format('woff'),
+          url($name+'.ttf') format('truetype'),
+          url($name+'.svg') format('svg');
+    font-style: normal;
+}
+
+@font-face {@include font-face(Quicksand-Bold);}
+@font-face {@include font-face(Quicksand-Light)}
+@font-face {@include font-face(Quicksand-Medium)}
+@font-face {@include font-face(Quicksand-Regular)}
+@font-face {@include font-face(Montserrat-Black)}
+@font-face {@include font-face(Montserrat-BlackItalic)}
+@font-face {@include font-face(Montserrat-Bold)}
+@font-face {@include font-face(Montserrat-BoldItalic)}
+@font-face {@include font-face(Montserrat-ExtraBold)}
+@font-face {@include font-face(Montserrat-ExtraBoldItalic)}
+@font-face {@include font-face(Montserrat-ExtraLight)}
+@font-face {@include font-face(Montserrat-ExtraLightItalic)}
+@font-face {@include font-face(Montserrat-Italic)}
+@font-face {@include font-face(Montserrat-Light)}
+@font-face {@include font-face(Montserrat-LightItalic)}
+@font-face {@include font-face(Montserrat-Medium)}
+@font-face {@include font-face(Montserrat-MediumItalic)}
+@font-face {@include font-face(Montserrat-Regular)}
+@font-face {@include font-face(Montserrat-SemiBold)}
+@font-face {@include font-face(Montserrat-SemiBoldItalic)}
+@font-face {@include font-face(Montserrat-Thin)}
+@font-face {@include font-face(Montserrat-ThinItalic)}

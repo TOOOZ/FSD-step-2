@@ -1,9 +1,9 @@
 @mixin font-face ($name) {
     font-family: $name;
-    src:  url('../common/fonts/'+$name+'.woff2') format('woff2'),
-          url('../common/fonts/'+$name+'.woff') format('woff'),
-          url('../common/fonts/'+$name+'.ttf') format('truetype'),
-          url('../common/fonts/'+$name+'.svg') format('svg');
+    src:  url($name+'.woff2') format('woff2'),
+          url($name+'.woff') format('woff'),
+          url($name+'.ttf') format('truetype'),
+          url($name+'.svg') format('svg');
     font-style: normal;
 }
 

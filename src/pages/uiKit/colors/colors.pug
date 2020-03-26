@@ -1,4 +1,5 @@
-include /pug/main.pug
+include ../../../components/colors&type/sample-list/sample-list.pug
+include ../../../components/colors&type/font-sample/font-sample.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -6,17 +7,10 @@ html(lang="en")
     meta(charset="UTF-8")
     title Colors & Type
     link(rel='stylesheet', href='main.css')
-    link(rel='stylesheet', href='')
   body
-    div(class='container colors')
-      +box('#1F2041','Dark Shade 100% ','grey_100')
-      +box('#1F2041','Dark Shade 75% ','grey_75')
-      +box('#1F2041','Dark Shade 50% ','grey_50')
-      +box('#1F2041','Dark Shade 25% ','grey_25')
-      +box('#1F2041','Dark Shade 5% ','grey_05')
-      +box('#BC9CFF','Purple ','purple')
-      +box('#6FCF97','Green ','green')
-    div(class='headers_types')
+    img(class='icon',src='/img/Group.jpg')
+    +sample-list()
+    //div(class='headers_types')
       +label('h1','h1_types','H1','This one is the sub-section or widget title')
       +label('h2','h2_types','H2','Next one is the item title inside widgets')
       +label('h3','h3_types','H3','This is a label or CTA text')

@@ -2,7 +2,7 @@
   "name": "fsd-step-2",
   "version": "1.0.0",
   "description": "webpack project",
-  "main": "index.js",
+  
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"

@@ -1,0 +1,47 @@
+@mixin color_box($color,$limpidity: 1) {
+    height: 70px;
+    width: 70px;
+    border-radius: 6px;
+    float: left;
+    background-color: rgba($color,$limpidity);
+}
+
+.sample {
+    width: 300px;
+    height: 70px;
+
+    .sample__color{
+        height: 70px;
+        width: 70px;
+        border-radius: 6px;
+        float: left;
+    }
+
+    .grey_100{@include color_box(#1F2041)}
+    .grey_75{@include color_box(#1F2041,0.75)}
+    .grey_50{@include color_box(#1F2041,0.50)}
+    .grey_25{@include color_box(#1F2041,0.25)}
+    .grey_05{@include color_box(#1F2041,0.05)}
+    .purple{@include color_box(#BC9CFF)}
+    .green{@include color_box(#6FCF97)}
+      
+    .sample__name{
+      width: 170px;
+      height: 70px;
+      font-family: 'Quicksand-Bold', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 29px;
+      margin-left: 70px;
+      padding-left: 40px;
+      padding-top: 6px;
+                        
+      .sample__code{ 
+        font-family: 'Quicksand-Light';
+        font-style: normal;
+        font-size: 19px;
+        line-height: 29px;            
+      }
+    }
+  }

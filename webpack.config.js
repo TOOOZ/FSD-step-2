@@ -4,12 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const PATHS = {
-    source: path.join(__dirname, 'src'),
+    source: path.join(__dirname, 'src/'),
     build: path.join(__dirname, 'build')
     };
 
 module.exports = {
-    entry: PATHS.source + '/index.js',
+    entry: PATHS.source+'index.js',
     output: {
         filename: '[name].js',
         path: PATHS.build,
@@ -75,7 +75,7 @@ module.exports = {
             { from: PATHS.source + '/common/fonts' , to: PATHS.build + '/fonts'},
           ]),
         new HtmlWebpackPlugin({
-            template: PATHS.source + '/index.pug',
+            template: PATHS.source + '/pages/uiKit/colors/colors.pug',
             }),
         new MiniCssExtractPlugin({
             filename: '[name].css',

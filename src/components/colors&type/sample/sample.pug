@@ -1,0 +1,9 @@
+
+mixin sample(color_code,name,color)
+  div(class='sample')
+    div(class='sample__color '+color)
+    div(class='sample__name')
+      div
+       span=name
+       br
+       span(class='sample__code')=color_code
