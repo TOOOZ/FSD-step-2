@@ -1,1 +1,27 @@
-@import '../../../common/fonts/fonts.scss';
+@import '../../../components/colors&type/sample-list/sample-list.scss';
+@import '../../../components/colors&type/font-sample/font-sample.scss';
+
+body,html {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    max-width: 1920px;
+    min-width: 320px;
+    background-color: #FFFFFF;
+}
+
+.headers_types{
+    position: absolute;
+    width: 403px;
+    height: 321px;
+    left: 846px;
+    top: 145px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+  

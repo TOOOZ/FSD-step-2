@@ -1,7 +1,11 @@
+@import '../sample/sample.scss';
+
 .sample-list {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 269.26px;
     height: 610px;
+    padding-left: 150px;
+    padding-top: 145px;
 }

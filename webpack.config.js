@@ -4,12 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const PATHS = {
-    source: path.join(__dirname, 'src/'),
+    source: path.join(__dirname, 'src'),
     build: path.join(__dirname, 'build')
     };
 
 module.exports = {
-    entry: PATHS.source+'index.js',
+    entry: [PATHS.source+'/pages/uiKit/colors/colors.js',
+            PATHS.source+'/pages/uiKit/cards/cards.js'],
     output: {
         filename: '[name].js',
         path: PATHS.build,
@@ -76,6 +77,11 @@ module.exports = {
           ]),
         new HtmlWebpackPlugin({
             template: PATHS.source + '/pages/uiKit/colors/colors.pug',
+            filename: 'colors.html',
+            }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pages/uiKit/formElements/formElements.pug',
+            filename: 'formElements.html',
             }),
         new MiniCssExtractPlugin({
             filename: '[name].css',

@@ -1,0 +1,46 @@
+@mixin h($font_size,$height,$line_height){
+    width: 37px;
+    height: $height;
+    font-family: 'Montserrat-Regular';
+    font-weight: normal;
+    font-size: $font_size;
+    line-height: $line_height;
+    text-align: right;
+    color:rgba(31, 32, 65, 0.25);
+  }
+  
+  @mixin text($font_family,$font_size,$color,$line_height,$height){
+    width: 336px;
+    height: $height;
+    font-family: $font_family;
+    font-style: normal;
+    font-size: $font_size;
+    line-height: $line_height;
+    color: $color;
+    margin-left: 30px;
+  }
+
+.title_container{
+    width: 403px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 50px;
+
+    .h1{@include h(24px,30px,29px)}
+    .h1_types{@include text('Quicksand-Bold',24px,#1F2041,30px,60px)}
+    
+    .h2{@include h(19px,24px,23px)}
+    .h2_types{@include text('Quicksand-Bold',19px,#1F2041,24px,48px)}
+    
+    .h3{@include h(12px,15px,15px);}
+    .h3_types{@include text('Montserrat-Bold',12px,#1F2041,15px,15px);
+      text-transform: uppercase;
+    }
+
+    .body_title{@include h(14px,24px,24px)}
+    .body_types{@include text('Montserrat-Regular',14px,rgba(31, 32, 65, 0.75),24px,48px);
+      width: 310px;
+      margin-top: -2px;
+    }
+
+  }

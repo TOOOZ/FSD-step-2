@@ -1,13 +1,13 @@
 @mixin font-face ($name) {
     font-family: $name;
-    src:  url($name+'.woff2') format('woff2'),
-          url($name+'.woff') format('woff'),
-          url($name+'.ttf') format('truetype'),
-          url($name+'.svg') format('svg');
+    src:  url('/fonts/'+$name+'.woff2') format('woff2'),
+          url('/fonts/'+$name+'.woff') format('woff'),
+          url('/fonts/'+$name+'.ttf') format('truetype'),
+          url('/fonts/'+$name+'.svg') format('svg');
     font-style: normal;
 }
 
-@font-face {@include font-face(Quicksand-Bold);}
+@font-face {@include font-face(Quicksand-Bold)}
 @font-face {@include font-face(Quicksand-Light)}
 @font-face {@include font-face(Quicksand-Medium)}
 @font-face {@include font-face(Quicksand-Regular)}
