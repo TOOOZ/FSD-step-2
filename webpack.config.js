@@ -10,7 +10,7 @@ const PATHS = {
 
 module.exports = {
     entry: [PATHS.source+'/pages/uiKit/colors/colors.js',
-            PATHS.source+'/pages/uiKit/cards/cards.js'],
+            PATHS.source+'/pages/uiKit/formElements/formElements.js'],
     output: {
         filename: '[name].js',
         path: PATHS.build,

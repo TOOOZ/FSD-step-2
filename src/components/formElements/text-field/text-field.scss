@@ -1,0 +1,32 @@
+@import "../text-field__name/text-field__name.scss";
+
+.text-field-default{
+    width: 320px;
+    height: 67px;
+}
+
+.text-field-default__name{
+    width: 72px;
+    height: 15px;
+    font-family: "Montserrat-Bold";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    float: left;
+    padding-bottom: 5px;
+
+}
+
+.text-field-default__type{
+    font-family: "Montserrat-Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: right;
+    text-transform: uppercase;
+
+    color: rgba(31, 32, 65, 0.5);
+}

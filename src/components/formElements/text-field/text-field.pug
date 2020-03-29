@@ -1,0 +1,7 @@
+include ../text-field__name/text-field__name.pug
+
+mixin text-field(name,type,text)
+    div(class='text-field-default')
+        div(class='text-field-default__name')=name
+        div(class='text-field-default__type')=type
+        +text-field__name(text)

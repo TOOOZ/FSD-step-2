@@ -1,3 +1,5 @@
+include ../../../components/formElements/text-field/text-field.pug
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -6,4 +8,9 @@ html(lang="en")
         title Document
     body
         img(class='icon' src='/img/Group.jpg')
+        div(class="text-field-container")
+            +text-field("text field","default","Email","padding")
+            div(class="space")
+            +text-field("text field","hover / focus","This is pretty awesome")
+
         

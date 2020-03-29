@@ -1,9 +1,26 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!--meta(name="viewport", content="width=device-width, initial-scale=1.0")-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   <link href="main.css" rel="stylesheet"></head>
-  <body><img src="/img/Group.jpg"><script type="text/javascript" src="main.js"></script></body>
+  <body><img class="icon" src="/img/Group.jpg">
+    <div class="text-field-container">
+      <div class="text-field-defaultpadding">
+        <div class="text-field-default__name">text field</div>
+        <div class="text-field-default__type">default</div>
+        <form> 
+          <input class="text-field" type="text" placeholder="Email">
+        </form>
+      </div>
+      <div class="text-field-defaultundefined">
+        <div class="text-field-default__name">text field</div>
+        <div class="text-field-default__type">hover/focus</div>
+        <form> 
+          <input class="text-field" type="text" placeholder="This is pretty awesome">
+        </form>
+      </div>
+    </div>
+  <script type="text/javascript" src="main.js"></script></body>
 </html>
