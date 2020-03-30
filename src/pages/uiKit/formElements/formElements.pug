@@ -1,4 +1,4 @@
-include ../../../components/formElements/text-field/text-field.pug
+include ../../../components/formElements/input-field/input-field.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -8,9 +8,15 @@ html(lang="en")
         title Document
     body
         img(class='icon' src='/img/Group.jpg')
-        div(class="text-field-container")
-            +text-field("text field","default","Email","padding")
-            div(class="space")
-            +text-field("text field","hover / focus","This is pretty awesome")
+        .form-elements
+            .form-elements__input-field="text field"
+            .form-elements__input-field1
+                +input-field("input-field1","Email")
+            .form-elements__input-field2="text field"
+            .form-elements__input-field3
+                +input-field("input-field2","This is pretty awesome")
+            .form-elements__input-field4="masked text field"
+            .form-elements__input-field5
+                +input-field("input-field3","ДД.ММ.ГГГГ",id="phone")
 
         

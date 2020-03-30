@@ -6,19 +6,23 @@
     <title>Document</title>
   <link href="main.css" rel="stylesheet"></head>
   <body><img class="icon" src="/img/Group.jpg">
-    <div class="text-field-container">
-      <div class="text-field-defaultpadding">
-        <div class="text-field-default__name">text field</div>
-        <div class="text-field-default__type">default</div>
-        <form> 
-          <input class="text-field" type="text" placeholder="Email">
+    <div class="form-elements">
+      <div class="form-elements__input-field">text field</div>
+      <div class="form-elements__input-field1">
+        <form class="input-field">
+          <input class="input-field__text" type="text" name="input-field1" placeholder="Email">
         </form>
       </div>
-      <div class="text-field-defaultundefined">
-        <div class="text-field-default__name">text field</div>
-        <div class="text-field-default__type">hover/focus</div>
-        <form> 
-          <input class="text-field" type="text" placeholder="This is pretty awesome">
+      <div class="form-elements__input-field2">text field</div>
+      <div class="form-elements__input-field3">
+        <form class="input-field">
+          <input class="input-field__text" type="text" name="input-field2" placeholder="This is pretty awesome">
+        </form>
+      </div>
+      <div class="form-elements__input-field4">masked text field</div>
+      <div class="form-elements__input-field5">
+        <form class="input-field">
+          <input class="input-field__text" type="text" name="input-field3" placeholder="ДД.ММ.ГГГГ" id="phone">
         </form>
       </div>
     </div>

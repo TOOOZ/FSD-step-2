@@ -1,4 +1,4 @@
-@import '../../../components/formElements/text-field/text-field.scss';
+@import '../../../components/formElements/input-field/input-field.scss';
 
 html{
     width: 1440px;
@@ -6,12 +6,79 @@ html{
     background: #FFFFFF;
 }
 
-.text-field-container{
-    height: 636px;
-    padding-top: 140px;
-    margin-left: 140px;
-}
+.form-elements{
+    &__input-field{
+        position: absolute;
+        width: 72px;
+        height: 15px;
+        left: 141px;
+        top: 143px;
 
-.space{
-    height:20px;
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+
+        text-transform: uppercase;
+
+        /* Dark 100% */
+
+        color: #1F2041;
+    }
+
+    &__input-field1{
+        position: absolute;
+        left: 141px;
+        top: 163px;
+        width: 320px;
+        height: 44px;
+
+    }
+    &__input-field2{
+        
+        position: absolute;
+        width: 72px;
+        height: 15px;
+        left: 141px;
+        top: 227.44px;
+
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+
+    }
+    &__input-field3{
+        position: absolute;
+        width: 320px;
+        height: 44px;
+        left: 141px;
+        top: 247.44px;
+    }
+    &__input-field4{
+        position: absolute;
+        width: 130px;
+        height: 15px;
+        left: 141px;
+        top: 398px;
+
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+
+    }
+    &__input-field5{
+        position: absolute;
+        width: 320px;
+        height: 44px;
+        left: 141px;
+        top: 418px;
+    }
 }
