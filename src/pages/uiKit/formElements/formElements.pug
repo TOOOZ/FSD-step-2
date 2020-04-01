@@ -1,8 +1,10 @@
 include ../../../components/formElements/input-field/input-field.pug
+include ../../../components/formElements/subscribe-field/subscribe-field.pug
 
 <!DOCTYPE html>
 html(lang="en")
     head
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
@@ -18,5 +20,8 @@ html(lang="en")
             .form-elements__input-field4="masked text field"
             .form-elements__input-field5
                 +input-field("input-field3","ДД.ММ.ГГГГ",id="phone")
+            .form-elements__input-field6="subscription text field"
+            .form-elements__input-field7
+                +subscribe-field()
 
         

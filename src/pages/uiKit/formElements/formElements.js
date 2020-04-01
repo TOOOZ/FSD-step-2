@@ -1,5 +1,6 @@
 import './formElements.scss';
+import './jquery.maskedinput';
 
 $(function(){
-    $("#phone").mask("8(999) 999-9999");
+    $("#phone").mask("99.99.9999");
 });
