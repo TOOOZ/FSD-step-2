@@ -9,27 +9,39 @@
         border-radius: 4px;
         outline: none;
         padding-right: 50px;
+
+        &:hover{
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            &::-webkit-input-placeholder{
+                color: rgba(31, 32, 65, 0.75);
+            }
+        }
+
+        &:focus{
+            border: 1px solid rgba(31, 32, 65, 0.5);
+        }
+
+        &::-webkit-input-placeholder{
+            font-family: "Montserrat-Regular";
+            font-style: normal;
+            font-size: 14px;
+            line-height: 171%;
+            color: rgba(31, 32, 65, 0.25);
+        }
     }
-    &__text::-webkit-input-placeholder{
-        font-family: "Montserrat-Regular";
-        font-style: normal;
-        font-size: 14px;
-        line-height: 171%;
-        color: rgba(31, 32, 65, 0.25);
-    }
-    &__submit{
+
+    &__icon{
         position: absolute;
         width: 40px;
         height: 40px;
         top: 2px;
         left: 224px;
         font-family: "Material Icons";
-        font-style: normal;
-        font-weight: normal;
         font-size: 24px;
-        color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        color: #BC9CFF;
         border: none;
         background-color: #FFFFFF;
         outline: none;
     }
+   
 }

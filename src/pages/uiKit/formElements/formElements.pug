@@ -1,5 +1,6 @@
 include ../../../components/formElements/input-field/input-field.pug
 include ../../../components/formElements/subscribe-field/subscribe-field.pug
+include ../../../components/formElements/checkbox/checkbox.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -23,5 +24,14 @@ html(lang="en")
             .form-elements__input-field6="subscription text field"
             .form-elements__input-field7
                 +subscribe-field()
+            .form-elements__checkbox="Checkbox Buttons"
+
+            .form-elements__checkbox1
+                +checkbox("Можно курить","1")
+            .form-elements__checkbox2
+                +checkbox("Можно с питомцами","2")
+            .form-elements__checkbox3
+                +checkbox("Можно пригласить гостей (до 10 человек)","3")
+
 
         

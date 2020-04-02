@@ -1,5 +1,6 @@
 @import '../../../components/formElements/input-field/input-field.scss';
 @import '../../../components/formElements/subscribe-field/subscribe-field.scss';
+@import '../../../components/formElements/checkbox/checkbox.scss';
 
 html{
     width: 1440px;
@@ -100,5 +101,36 @@ html{
         height: 44px;
         left: 140px;
         top: 732px;
+    }
+    &__checkbox{
+        position: absolute;
+        width: 136px;
+        height: 15px;
+        left: 587px;
+        top: 143px;
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+    &__checkbox1{
+        position: absolute;
+        left: 587px;
+        top: 174.56px;  
+
+    }
+    &__checkbox2{
+        position: absolute;
+        left: 587px;
+        top: 205.12px;
+    }
+    &__checkbox3{
+        position: absolute;
+        width: 240px;
+        height: 40px;
+        left: 587px;
+        top: 235.12px
     }
 }
