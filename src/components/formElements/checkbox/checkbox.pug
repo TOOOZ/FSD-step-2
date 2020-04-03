@@ -1,5 +1,7 @@
 mixin checkbox(text,checkbox_id)
     form.checkbox
         input(type="checkbox" id=checkbox_id)
-        label(for=checkbox_id)=text
-            
+        label(class="checkbox__item" for=checkbox_id)
+        div
+            label(class="checkbox__text" for=checkbox_id)=text
+        

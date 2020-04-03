@@ -1,6 +1,8 @@
 include ../../../components/formElements/input-field/input-field.pug
 include ../../../components/formElements/subscribe-field/subscribe-field.pug
 include ../../../components/formElements/checkbox/checkbox.pug
+include ../../../components/formElements/radio-button/radio-button.pug
+include ../../../components/formElements/toggle/toggle.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -32,6 +34,21 @@ html(lang="en")
                 +checkbox("Можно с питомцами","2")
             .form-elements__checkbox3
                 +checkbox("Можно пригласить гостей (до 10 человек)","3")
+
+            .form-elements__radio-button="radio buttons"
+            form
+                .form-elements__radio-button1
+                    +radio-batton("Мужчина","1")
+                .form-elements__radio-button2
+                    +radio-batton("Женщина","1")
+            
+            .form-elements__toggle="toggle"
+            form
+                .form-elements__toggle1
+                    +toggle()
+                .form-elements__toggle2
+
+
 
 
         

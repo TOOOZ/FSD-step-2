@@ -1,7 +1,7 @@
 
 .checkbox{
 
-    label {
+    &__text {
         font-family: "Montserrat-Regular";
         font-style: normal;
         font-size: 14px;
@@ -11,9 +11,12 @@
         -moz-user-select: none;
         -ms-user-select: none;
     }
-
-    label:before {
-        display: inline-block;      
+    &__text:hover{
+        cursor: pointer;
+    }
+    
+    &__item:before {
+        display: block;      
         background: #FFFFFF;
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
@@ -24,8 +27,12 @@
         margin-right: 10px;
         position: relative;
         text-align: center;
-        vertical-align: middle;
+        float:left;
     }
+    &__item:hover{
+        cursor: pointer;
+    }
+
 
     input{
         display: none;

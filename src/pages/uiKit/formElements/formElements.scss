@@ -1,6 +1,8 @@
 @import '../../../components/formElements/input-field/input-field.scss';
 @import '../../../components/formElements/subscribe-field/subscribe-field.scss';
 @import '../../../components/formElements/checkbox/checkbox.scss';
+@import '../../../components/formElements/radio-button/radio-button.scss';
+@import '../../../components/formElements/toggle/toggle.scss';
 
 html{
     width: 1440px;
@@ -118,11 +120,15 @@ html{
     &__checkbox1{
         position: absolute;
         left: 587px;
-        top: 174.56px;  
+        top: 174.56px;
+        width: 240px;
+        height: 40px;  
 
     }
     &__checkbox2{
         position: absolute;
+        width: 240px;
+        height: 40px;
         left: 587px;
         top: 205.12px;
     }
@@ -132,5 +138,52 @@ html{
         height: 40px;
         left: 587px;
         top: 235.12px
+    }
+    &__radio-button{
+        position: absolute;
+        width: 107px;
+        height: 15px;
+        left: 587px;
+        top: 313px;
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+    &__radio-button1{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 587px;
+        top: 343px;
+    }
+    &__radio-button2{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 705px;
+        top: 344px;
+    }
+    &__toggle{
+        position: absolute;
+        width: 50px;
+        height: 15px;
+        left: 587px;
+        top: 404.56px;  
+        font-family: "Montserrat-ExtraBold";
+        font-style: normal;
+        font-size: 11px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+    &__toggle1{
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        left: 587px;
+        top: 435.56px;
     }
 }
