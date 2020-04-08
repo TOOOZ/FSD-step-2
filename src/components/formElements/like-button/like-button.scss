@@ -1,0 +1,62 @@
+.like-button {
+    width:100%;
+    height: 100%;
+
+    &__button{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: #FFFFFF;
+        padding:0 0 0 0;
+        display: flex;
+        box-sizing: border-box;
+        border-radius: 10px;
+        outline: none;
+
+        &_liked{
+            border: 1px solid rgba(31, 32, 65, 0.25);
+        }
+
+        &_not-liked{
+
+        }
+    }
+
+    &__button:hover{
+        cursor: pointer;
+        border: 1px solid #BC9CFF;
+    }
+
+    &:hover &__heart{
+        color: #BC9CFF;
+    }
+
+    &:hover &__number{
+        color: #BC9CFF;
+    }
+
+    &__heart{
+        width: 18px;
+        height: 15px;
+        font-family: "Material Icons";
+        font-weight: normal;
+        text-align: center;
+        padding-top: 5px;
+        font-size: 10px;
+        line-height: 9px;
+        color: rgba(31, 32, 65, 0.25);
+        cursor: pointer; 
+        content:"favorite";
+    }
+
+    &__number{
+        font-family: "Montserrat-Regular";
+        font-weight: normal;
+        padding-top:2px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-left: 3px;
+        color: rgba(31, 32, 65, 0.25);
+        content: "2";
+    }
+}

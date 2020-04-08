@@ -1,4 +1,5 @@
-mixin toggle()   
+mixin toggle(text)   
     label.switch
         input(type="checkbox")
-        span(class="slider round")
+        span(class="switch__slider switch_round")
+        span(class="switch__text")=text

@@ -3,6 +3,7 @@ include ../../../components/formElements/subscribe-field/subscribe-field.pug
 include ../../../components/formElements/checkbox/checkbox.pug
 include ../../../components/formElements/radio-button/radio-button.pug
 include ../../../components/formElements/toggle/toggle.pug
+include ../../../components/formElements/like-button/like-button.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -45,9 +46,14 @@ html(lang="en")
             .form-elements__toggle="toggle"
             form
                 .form-elements__toggle1
-                    +toggle()
+                    +toggle("Получать спецпредложения")
                 .form-elements__toggle2
+                    +toggle("Получать спецпредложения")
 
+            .form-elements__like="like button"
+            .form-elements__like1
+                +like()
+            
 
 
 

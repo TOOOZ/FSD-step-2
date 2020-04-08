@@ -3,6 +3,7 @@
 @import '../../../components/formElements/checkbox/checkbox.scss';
 @import '../../../components/formElements/radio-button/radio-button.scss';
 @import '../../../components/formElements/toggle/toggle.scss';
+@import '../../../components/formElements/like-button/like-button.scss';
 
 html{
     width: 1440px;
@@ -181,9 +182,36 @@ html{
     }
     &__toggle1{
         position: absolute;
-        width: 40px;
+        width: 250px;
         height: 20px;
         left: 587px;
         top: 435.56px;
+    }
+    &__toggle2{
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        left: 587px;
+        top: 469.56px;
+    }
+    &__like{
+        position: absolute;
+        width: 86px;
+        height: 15px;
+        left: 587px;
+        top: 534px;
+        font-family: "Montserrat-ExtraBold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+    &__like1{
+        position: absolute;
+        width: 40px;
+        height: 20px;
+        left: 587px;
+        top: 565px;
     }
 }
