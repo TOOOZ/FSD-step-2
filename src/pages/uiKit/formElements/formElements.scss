@@ -4,6 +4,7 @@
 @import '../../../components/formElements/radio-button/radio-button.scss';
 @import '../../../components/formElements/toggle/toggle.scss';
 @import '../../../components/formElements/like-button/like-button.scss';
+@import '../../../components/formElements/dropdown/dropdown.scss';
 
 html{
     width: 1440px;
@@ -12,6 +13,56 @@ html{
 }
 
 .form-elements{
+    &__range-slider{
+        position: absolute;
+        width: 95px;
+        height: 15px;
+        left: 979px;
+        top: 143.44px;
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    &__range-slider1{
+        position: absolute;
+        width: 266px;
+        height: 6px;
+        left: 979px;
+        top: 181.44px;
+    }
+    &__date-dropdown{
+        position: absolute;
+        width: 150px;
+        height: 15px;
+        left: 141px;
+        top: 502px;
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    &__dropdown{
+        position: absolute;
+        width: 81px;
+        height: 15px;
+        left: 140px;
+        top: 876px;
+        font-family: "Montserrat-Bold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    &__dropdown1{
+        position: absolute;
+        width: 266px;
+        height: 44px;
+        left: 140px;
+        top: 896px;
+    }
     &__input-field{
         position: absolute;
         width: 72px;

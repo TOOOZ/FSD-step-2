@@ -4,11 +4,12 @@ include ../../../components/formElements/checkbox/checkbox.pug
 include ../../../components/formElements/radio-button/radio-button.pug
 include ../../../components/formElements/toggle/toggle.pug
 include ../../../components/formElements/like-button/like-button.pug
+include ../../../components/formElements/dropdown/dropdown.pug
 
 <!DOCTYPE html>
 html(lang="en")
     head
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
@@ -28,6 +29,17 @@ html(lang="en")
             .form-elements__input-field7
                 +subscribe-field()
             .form-elements__checkbox="Checkbox Buttons"
+
+            .form-elements__date-dropdown="date Dropdown"
+            .form-elements__date-dropdown1
+
+            .form-elements__dropdown="dropdown"
+            .form-elements__dropdown1
+
+            .form-elements__range-slider="range slider"
+            .form-elements__range-slider1
+                input(type="text" class="js-range-slider" name="my_range" value="")
+
 
             .form-elements__checkbox1
                 +checkbox("Можно курить","1")

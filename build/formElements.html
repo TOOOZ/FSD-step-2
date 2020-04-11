@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title><link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
   <link href="main.css" rel="stylesheet"></head>
   <body><img class="icon" src="/img/Group.jpg">
     <div class="form-elements">
@@ -33,6 +38,10 @@
         </form>
       </div>
       <div class="form-elements__checkbox">Checkbox Buttons</div>
+      <div class="form-elements__date-dropdown">date Dropdown</div>
+      <div class="form-elements__date-dropdown1"></div>
+      <div class="form-elements__dropdown">dropdown</div>
+      <div class="form-elements__dropdown1"><p>Date: <input type="text" id="datepicker"></p></div>
       <div class="form-elements__checkbox1">
         <form class="checkbox">
           <input type="checkbox" id="1">
@@ -89,7 +98,7 @@
       <div class="form-elements__like">like button</div>
       <div class="form-elements__like1">
         <form class="like-button">
-          <button class="like-button__button liked">
+          <button class="like-button__button like-button__button_liked">
             <div class="like-button__heart">favorite_border</div><span class="like-button__number">2</span>
           </button>
         </form>
