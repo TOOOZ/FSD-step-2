@@ -1,0 +1,42 @@
+.rate-button{
+    display: flex;
+    flex-direction: row-reverse;
+
+    input{
+        display: none;
+    }
+    label{
+        display: block;
+        cursor: pointer;
+        width: 50px;
+    }
+    label:before{
+        content: 'star_border';
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 20px;
+        position: relative;
+        display: block;
+        color:#BC9CFF;
+        background: white;
+    }
+    label:after{
+        content: 'star';
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 20px;
+        position: absolute;
+        display: block;
+        color:#BC9CFF;
+        top: 0;
+        opacity: 0;
+    }
+    label:hover:after,
+    input:checked ~ label:after{
+        opacity: 1;
+    }
+}

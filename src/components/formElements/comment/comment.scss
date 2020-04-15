@@ -1,0 +1,46 @@
+.grid-container{
+    width: 711px;
+    height: 133px;
+    display: grid; 
+    grid-template-columns: 50px 660px; 
+    grid-template-rows: 58px 50px;
+
+    &__profile-image{
+        display: inline-block;
+        width: 49px;
+        height: 60px;
+        background: url(/img/p1.png) center top;
+    }
+    &__like-button{
+        padding-left: 4px;
+        width: 40px;
+        height: 20px;
+        margin-top:10px;
+    }
+    &__day{
+        font-family: "Montserrat-Regular";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.75);
+        padding-top: 8px;;
+    }
+    &__name{
+        padding-top: 15px;
+        padding-left: 7px;
+        font-family: "Montserrat-ExtraBold";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 15px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+    &__text{
+        padding-top:10px;
+        padding-left: 8px;
+        font-family: "Montserrat-Regular";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+}

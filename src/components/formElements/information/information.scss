@@ -1,0 +1,32 @@
+.information{
+    width:291px;
+    height:48px;
+    
+    &__icon{
+        float: left;
+        margin-top:3px;
+        margin-right: 10px;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 41px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #8BA4F9;
+    }
+
+    &__head{
+        font-family: "Montserrat-Bold";
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+    &__text{
+        font-family: "Montserrat-Regular";
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+}

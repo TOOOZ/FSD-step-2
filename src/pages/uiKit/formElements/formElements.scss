@@ -5,6 +5,10 @@
 @import '../../../components/formElements/toggle/toggle.scss';
 @import '../../../components/formElements/like-button/like-button.scss';
 @import '../../../components/formElements/dropdown/dropdown.scss';
+@import '../../../components/formElements/information/information.scss';
+@import '../../../components/formElements/comment/comment.scss';
+@import '../../../components/formElements/bullet-list/bullet-list.scss';
+@import '../../../components/formElements/rate-button/rate-button.scss';
 
 html{
     width: 1440px;
@@ -264,5 +268,58 @@ html{
         height: 20px;
         left: 587px;
         top: 565px;
+    }
+    &__information{
+        position: absolute;
+        left: 140px;
+        top: 1563px;
+    }
+    &__information1{
+        position: absolute;
+        left: 140px;
+        top: 1652px;
+    }
+    &__comment{
+        position: absolute;
+        left: 587px;
+        top: 1563px;
+    }
+    &__bullet-list{
+        position: absolute;
+        width: 80px;
+        height: 15px;
+        left: 979px;
+        top: 1196px;
+        font-family: "Montserrat-ExtraBold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+    &__bullet-list1{
+        position: absolute;
+        left: 939px;
+        top: 1208px;
+    }
+    &__rate-button{
+        font-family: "Montserrat-ExtraBold";
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+        position: absolute;
+        width: 92px;
+        height: 15px;
+        left: 587px;
+        top: 625px;
+    }
+    &__rate-button1{
+        position: absolute;
+        width: 120px;
+        height: 24px;
+        left: 587px;
+        top: 656px;
     }
 }

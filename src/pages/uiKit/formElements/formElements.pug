@@ -5,6 +5,10 @@ include ../../../components/formElements/radio-button/radio-button.pug
 include ../../../components/formElements/toggle/toggle.pug
 include ../../../components/formElements/like-button/like-button.pug
 include ../../../components/formElements/dropdown/dropdown.pug
+include ../../../components/formElements/information/information.pug
+include ../../../components/formElements/comment/comment.pug
+include ../../../components/formElements/bullet-list/bullet-list.pug
+include ../../../components/formElements/rate-button/rate-button.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -38,7 +42,7 @@ html(lang="en")
 
             .form-elements__range-slider="range slider"
             .form-elements__range-slider1
-                input(type="text" class="js-range-slider" name="my_range" value="")
+                div(id="slider")
 
 
             .form-elements__checkbox1
@@ -65,6 +69,22 @@ html(lang="en")
             .form-elements__like="like button"
             .form-elements__like1
                 +like()
+            .form-elements__information
+                +information("insert_emoticon","Комфорт","Шумопоглощающие стены")
+            .form-elements__information1
+                +information("location_city","Удобство","Окно в каждой из спален")
+
+            .form-elements__rate-button="rate button"
+            .form-elements__rate-button1
+                +rate()
+
+            .form-elements__bullet-list="bullet list"
+            .form-elements__bullet-list1
+                +list()
+
+            .form-elements__comment
+                +comment("Мурад Сарафанов","Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+
             
 
 

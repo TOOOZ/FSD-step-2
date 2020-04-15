@@ -1,0 +1,10 @@
+include ../like-button/like-button.pug
+
+mixin comment(name,text)
+    .grid-container
+        .grid-container__profile-image
+        .grid-container__name=name
+            .grid-container__day="5 дней назад"
+        .grid-container__like-button
+            +like()
+        .grid-container__text=text
